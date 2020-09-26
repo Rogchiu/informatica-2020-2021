@@ -39,10 +39,10 @@ promedio x =
 type Naturales = Cons Naturales
     | Cero 
 
-normalANatural xs =
+normalNatural xs =
     case xs of
     0 -> Cero
-    b -> Cons (normalANatural (b - 1) )
+    b -> Cons (normalNatural (b - 1) )
 
 igual a b = 
     case (a , b) of
